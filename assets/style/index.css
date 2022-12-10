@@ -76,7 +76,7 @@ strong {
 .bg {
     width: 100%;
     height: 1012px;
-    background: url(../public/img/visual_bg.png) no-repeat center bottom;
+    background: url(../images/visual_bg.png) no-repeat center bottom;
     position: relative;
     left: 0;
     top: 550px;
@@ -379,7 +379,7 @@ article header {
     position: relative;
 }
 .graphic .more:before{content: "";display: block;width: 8px;height: 15px;
-    background: url(../img/bullet.png) no-repeat 0 0;
+    background: url(../images/bullet.png) no-repeat 0 0;
     position: absolute;right: 0;top: 13px;z-index: 2
 }
 .graphic .more:after{content: "";display: block;width: 40px;height: 40px;
@@ -458,7 +458,7 @@ article header {
 }
 .w-wrap li+li{margin-left: 40px}
 .w-wrap li:before{content: "";display: block;width: 8px;height: 15px;
-    background: url(../public/img/bullet.png) no-repeat 0 0;
+    background: url(../images/bullet.png) no-repeat 0 0;
     position: absolute;right: 14px;top: 13px;z-index: 1
 }
 .w-wrap li:after{content: "";display: block;width: 40px;height: 40px;
@@ -521,7 +521,7 @@ article header {
     position: absolute;bottom: 0;
 }
 .dynamic .btn:before{content: "";display: block;width: 8px;height: 15px;
-    background: url(../public/img/bullet.png) no-repeat 0 0;
+    background: url(../images/bullet.png) no-repeat 0 0;
     position: absolute;right: 0;top: 13px;z-index: 2
 }
 .dynamic .btn:after{content: "";display: block;width: 40px;height: 40px;
@@ -575,7 +575,7 @@ article header {
     text-align: center;
 }
 #footer>article:before{content: '';display: block;width: 308px;height: 280px;margin: 0 auto;
-    background: url(../public/img/f-logo.gif) 0 0;
+    background: url(../images/f-logo.gif) 0 0;
 }
 #footer article h1{margin-bottom: 30px;padding-top: 50px;
     font-family: 'Roboto', sans-serif;font-size: 28px;font-weight: 600
