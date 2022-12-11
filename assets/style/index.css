@@ -10,7 +10,7 @@ body {
 }
 
 .title {
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 .start h1 {
@@ -68,9 +68,27 @@ strong {
 
 .banner {
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0px;
+    height: 100vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper {
+    background-color: #efeff7;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 80%;
+    height: 80%;
 }
 
 .bg {
@@ -630,3 +648,11 @@ article header {
 .hover2{top: 800px;transition: all 1.3s}
 .hover3{top: 1100px;transition: all 1.4s}
 .hover4{top: 1400px;transition: all 1.5s}
+
+.profile-picture {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}

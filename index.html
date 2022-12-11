@@ -20,14 +20,16 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css" integrity="sha512-jxGmKjC/OykrTklkNK2NgnhNtKtUAADFY+rvSi3nA7dbaPRfjrSXYxHqX8iq5N6WTOntqEQZrEwW3L84sirfKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio(2022)</title>
   </head>
   <body>
     <aside class="indi" id="right">
       <ul class="indicator">
           <li><a href="#home"><em>HOME</em></a></li>
-          <li><a href="#about"><em>ABOUT ME</em></a></li>
-          <li><a href="#web"><em>WEB</em></a></li>
+          <li><a href="#about"><em>ABOUT US</em></a></li>
+          <li><a href="#web"><em>INTRODUCTION</em></a></li>
           <li><a href="#contact"><em>CONTACT</em></a></li>
       </ul>
     </aside>
@@ -38,23 +40,23 @@
         >
           <li>
             <a
-              class="uppercase text-[14px] font-[600] hover:text-white transition-100 cursor-pointer px-5 py-3 text-[#cce7ff]"
+              class="uppercase text-[14px] font-[600] hover:text-white transition-100 cursor-pointer px-5 py-3 text-[#3b54b1]"
               href="#about"
             >
-              About me
+              About us
             </a>
           </li>
           <li>
             <a
-              class="uppercase text-[14px] font-[600] hover:text-white transition-100 cursor-pointer px-5 py-3 text-[#cce7ff]"
+              class="uppercase text-[14px] font-[600] hover:text-white transition-100 cursor-pointer px-5 py-3 text-[#3b54b1]"
               href="#web"
             >
-              Web
+              Introduction
             </a>
           </li>
           <li>
             <a
-              class="uppercase text-[14px] font-[600] hover:text-white transition-100 cursor-pointer px-5 py-3 text-[#cce7ff]"
+              class="uppercase text-[14px] font-[600] hover:text-white transition-100 cursor-pointer px-5 py-3 text-[#3b54b1]"
               href="#contact"
             >
               Contact
@@ -64,7 +66,7 @@
       </div>
     </header>
     <main>
-      <div class="custom-container relative" id="home">
+      <!-- <div class="custom-container relative" id="home">
         <div class="intro" id="left">
           <p>Temuujin WEB DESIGN PORTFOLIO</p>
           <strong>Discover</strong>
@@ -72,23 +74,54 @@
           <strong>Create</strong>
           <p>July - August 2022</p>
         </div>
-      </div>
-      <div class="banner">
-        <video loop muted autoplay>
+      </div> -->
+      <div class="banner" id="home">
+        <!-- <video loop muted autoplay>
           <source src="./assets/video/intro_moon3.mp4" type="video/mp4" />
           <source
             src="http://asteriskina.com/mov/intro_moon3.ogv"
             type="video/ogv"
           />
           <source src="./assets/video/intro_moon3.webm" type="video/webm" />
-        </video>
+        </video> -->
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="./assets/images/angiin-zurag-1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/angiin-zurag-2.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/angiin-zurag-3.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/angiin-zurag-4.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/angiin-zurag-5.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/angiin-zurag-6.jpg" alt="">
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
-      <div class="bg"></div>
+      <!-- <div class="bg"></div> -->
       <section class="start">
         <div class="title">
           <h1>
             WELCOME, <br />
-            MY NAME IS <strong>TEMUUJIN</strong>
+            OUR CLASS IS <strong>11A</strong>
           </h1>
         </div>
         <ul>
@@ -242,49 +275,49 @@
       <section class="web" style="top: 0px" id="web">
         <div class="w-wrap">
           <header class="title" id="right">
-            <h1>WEB</h1>
+            <h1>INTRODUCTION</h1>
           </header>
           <article class="nami" id="bottom">
             <header>
-              <h1><strong>Freelancing</strong></h1>
+              <h1><strong>Э. Мөнгөн</strong></h1>
             </header>
-            <p>2021.11.0 - 2022.06.10</p>
-            <p>HTML, CSS, JS, JAVA SPRING ашиглана хөгжүүлэх төсөл.</p>
-            <figure>
-              <img src="./assets/images/web1.jpg" alt="" />
+            <p>Анги удирдсан багш</p>
+            <p>Математикийн багшаар "Өнөр цогцолбор" сургуульд ажилладаг.</p>
+            <figure class="profile-picture">
+              <img src="./assets/images/Мөнгөн-picture.jpg" alt="" />
             </figure>
             <ul>
               <li>
                 <a href="#" data-toggle="modal" data-target="#web1"
-                  >Concept View</a
+                  >Visit Instagram</a
                 >
               </li>
               <li>
-                <a href="#">Visit Website</a>
+                <a href="#">Visit Facebook</a>
               </li>
             </ul>
           </article>
           <article class="ddp" id="bottom">
             <header>
-              <h1><strong>Communtiy</strong></h1>
+              <h1><strong>Амин-Эрдэнэ</strong></h1>
             </header>
-            <p>2022.7.0 - 2022.12.0</p>
-            <p>HTML, CSS, JS, JAVA SPRING ашиглана хөгжүүлэх төсөл.</p>
+            <p>Ангийн дарга</p>
+            <p>11А ангид ангийн даргаар 6 жил болж байна.</p>
             <figure>
               <img src="./assets/images/web2.jpg" alt="" />
             </figure>
             <ul>
               <li>
                 <a href="#" data-toggle="modal" data-target="#web2"
-                  >Concept View</a
+                  >Visit Instagram</a
                 >
               </li>
               <li>
-                <a href="#">Visit Website</a>
+                <a href="#">Visit Facebook</a>
               </li>
             </ul>
           </article>
-          <article class="dipt" id="bottom">
+          <!-- <article class="dipt" id="bottom">
             <header>
               <h1><strong>Dipt</strong></h1>
             </header>
@@ -304,7 +337,7 @@
                 <a href="#">Visit Website</a>
               </li>
             </ul>
-          </article>
+          </article> -->
       </section>
     </main>
     <footer id="contact">
@@ -326,3 +359,24 @@
 
 
 <script src="./assets/js/index.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    // Optional parameters
+    loop: true,
+    autoplay: true,
+    spaceBetween: 30,
+
+
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
